@@ -14,9 +14,11 @@
         <thymeleaf.version>3.0.2.RELEASE</thymeleaf.version>
         <spring.version>4.3.4.RELEASE</spring.version>
         <tomcat.port>8585</tomcat.port>
-        <tomcat.contextPath>/</tomcat.contextPath>
-        <java.version>1.8</java.version>
-    </properties>
+        <tomcat.contextPath>/hello</tomcat.contextPath>
+	    <maven.compiler.source>1.8</maven.compiler.source>
+    	<maven.compiler.target>1.8</maven.compiler.target>
+    	<failOnMissingWebXml>false</failOnMissingWebXml>
+     </properties>
 
     <dependencies>
         <!-- Provided dependencies -->
@@ -61,7 +63,8 @@
                     <path>${tomcat.contextPath}</path>
                 </configuration>
             </plugin>
-        </plugins>
+      
+      	</plugins>
     </build>
 
 </project>
